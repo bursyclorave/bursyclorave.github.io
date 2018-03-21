@@ -8,8 +8,8 @@
         // --- constants ---
         var imgs = new Array();     // string[], URLs of tile images
         var nums = new Array();     // string[], URLs of digit images
-        var maxcolcount = 12;        // integer, maximum number of columns
-        var maxrowcount = 12;        // integer, maximum number of rows
+        var maxcolcount = 12;       // integer, maximum number of columns
+        var maxrowcount = 6;        // integer, maximum number of rows
         var isCircular = false;
 
         var circleFlips;
@@ -757,10 +757,12 @@
 <script lang="javascript">
     document.write("<table><tr><td style='line-height:0;'>");
     createField(emptyimg, "");
-    document.write("</td><td width=10%></td><td style='line-height:0;'>");
+    document.write("</td></tr></table><table><tr><td style='line-height:0;'>");
+    //document.write("</td><td width=10%></td><td style='line-height:0;'>");
     createField(outrangeimg, "ans");
     document.write("</td></tr></table>");
     newSettings();
 </script>
 </body>
 </html>
+
